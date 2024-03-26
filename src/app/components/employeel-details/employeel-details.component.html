@@ -1,0 +1,85 @@
+<div *ngIf="viewMode; else editable">
+  <div *ngIf="currentEmployee.id">
+    <h4>Employee</h4>
+    <div>
+      <label><strong>ID:</strong></label> {{ currentEmployee.id }}
+    </div>
+    <div>
+      <label><strong>Name:</strong></label>
+      {{ currentEmployee.name }}
+    </div>
+    <div>
+      <label><strong>Age:</strong></label>
+      {{ currentEmployee.age  }}
+    </div>
+
+    <a
+      class="badge badge-warning"
+      routerLink="/employee/{{ currentEmployee.id }}"
+    >
+      Edit
+    </a>
+  </div>
+
+  <div *ngIf="!currentEmployee">
+    <br />
+    <p>Please click on a Employee...</p>
+  </div>
+</div>
+
+<ng-template #editable>
+  <div *ngIf="currentEmployee.id" class="edit-form">
+    <h4>Tutorial</h4>
+    <form>
+      <div class="form-group">
+        <label for="id">ID</label>
+        <input
+          type="text"
+          class="form-control"
+          id="id"
+          [(ngModel)]="currentEmployee.id"
+          name="title"
+        />
+      </div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          [(ngModel)]="currentEmployee.name"
+          name="description"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input
+          type="text"
+          class="form-control"
+          id="age"
+          [(ngModel)]="currentEmployee.age"
+          name="age"
+        />
+      </div>
+    </form>
+
+    <button class="badge badge-danger mr-2" (click)="deleteEmployee()">
+      Delete
+    </button>
+
+    <button
+      type="submit"
+      class="badge badge-success mb-2"
+      (click)="updateEmployee()"
+    >
+      Update
+    </button>
+    <p>{{ message }}</p>
+  </div>
+
+  <div *ngIf="!currentEmployee.id">
+    <br />
+    <p>Cannot access this Employee...</p>
+  </div>
+</ng-template>
