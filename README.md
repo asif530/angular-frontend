@@ -22,3 +22,6 @@ This angular project will be used as frontend application. It will consume rest 
 # Run the project locally
 Run `ng serve --port 8081` for a dev server. Navigate to `http://localhost:8081/`. The app will automatically reload if you change any of the source files.
 
+# Run the project in docker
+  # Step 1
+
