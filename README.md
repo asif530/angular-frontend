@@ -7,7 +7,13 @@ Build an Angular 15 CRUD example App to consume Rest APIs, display, modify & sea
 - We can create, retrieve, update, delete employee.
 
 # Pre-requisite
-** Knowledge on angular**
+- Knowledge on angular
+  - Initiate project
+  - Some basics of angular i.e. component, service, routing
+  - Make rest call
+  - Build for production
+- Basic Docker commands
+ 
 
 # Run the project locally
 Run `ng serve --port 8081` for a dev server. Navigate to `http://localhost:8081/`. The app will automatically reload if you change any of the source files.
