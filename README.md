@@ -2,13 +2,14 @@
 
 Build an Angular 15 CRUD example App to consume Rest APIs, display, modify & search data.
 
-Tutorial Application in that:
-- Each Tutorial has id, title, description, published status.
-- We can create, retrieve, update, delete Tutorials.
-- There is a Search bar for finding Tutorials by title.
+# What this Application does:
+- Each employee has id, name, age.
+- We can create, retrieve, update, delete employee.
 
-![angular-15-crud-example](angular-15-crud-example.png)
+# Pre-requisite
+** Knowledge on angular**
 
+# Run the project locally
 Run `ng serve --port 8081` for a dev server. Navigate to `http://localhost:8081/`. The app will automatically reload if you change any of the source files.
 
 For instruction, please visit:
