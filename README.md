@@ -28,9 +28,8 @@ Run `ng serve --port 8081` for a dev server. Navigate to `http://localhost:8081/
 # Run the project in docker
 ### Step 1
    Create a build with following command </br>
-     **ng build --configuration production**  </br>
-  This will create a dist folder in the working directory and inside that there will be another folder containing build distribution of application. Give a 
-meaningfull name. We will be using it later.  </br>
+   $~~$**ng build --configuration production**  </br>
+  This will create a dist folder in the working directory and inside that there will be another folder containing build distribution of application. Give a meaningfull name. We will be using it later.  </br>
   
 ### Step 2
   In the root directory of your Angular project, create a file named Dockerfile (without any file extension) and open it in a text editor(notepad++ is preferred).
@@ -45,7 +44,7 @@ meaningfull name. We will be using it later.  </br>
 
 ### Step 4
   Create a Docker Image  </br>
-   **docker build -t {image-name}**  </br>
+  $~~$**docker build -t {image-name}**  </br>
   For easier work name the image same as application name.  </br>
 
   
