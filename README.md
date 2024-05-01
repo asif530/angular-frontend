@@ -56,7 +56,7 @@ Run `ng serve --port 8081` for a dev server. Navigate to `http://localhost:8081/
   Now execute following command to run the image </br>
    $~~$ **docker run -d -it -p 80:80/tcp --name {container-name} {image-name}:latest** </br>
    Here we give a container name for simplicity. If not given docker will give a random name. </br>
-   Also we have to provide image-name so that it can be ran in the comtainer. </br>
+   Also we have to provide image-name so that it can be ran in the comtainer. </br></br>
    With following command we can see the running images: </br>
    $~$ **docker ps**
 
