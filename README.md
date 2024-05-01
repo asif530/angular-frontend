@@ -27,7 +27,28 @@ Run `ng serve --port 8081` for a dev server. Navigate to `http://localhost:8081/
 - - - -
 # Run the project in docker
 ### Step 1
+   Create a build with following command
+     **ng build --configuration production**
+  This will create a dist folder in the working directory and inside that there will be another folder containing build distribution of application. Give a 
+meaningfull name. We will be using it later. 
+  
 ### Step 2
+  In the root directory of your Angular project, create a file named Dockerfile (without any file extension) and open it in a text editor(notepad++ is preferred).
+
+### Step 3
+  See the Dockerfile of this repo. Copy and Paste the instructions. In the second instruction you give the name of your project which was given in the dist.
+  These instructions illustrate that 
+  - we want to use the official Nginx image as the base for our Docker image.
+  - Then copy the built app (located in the dist/{name-of-app} directory) into the proper location within the container.
+  - Expose port 80, the default port for Nginx
+  - finally, we start the Nginx server when the container starts.
+
+### Step 4
+  Create a Docker Image
+   **docker build -t {image-name}** 
+  For easier work name the image same as application name.
+
+  
 
  
 
